@@ -68,8 +68,8 @@
   }
 
   .circulo1{
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     background-image: url('./img/logos/github-logo.png');
     border-radius: 50%;
     position: absolute;
@@ -137,8 +137,8 @@
     transition: opacity 0.5s ease;
   }
   .circulo6{
-    width: 20px;
-    height: 20px;
+    width: 80px;
+    height: 80px;
     background-image: url('./img/logos/vue-logo.png');
     border-radius: 50%;
     position: absolute;
@@ -153,8 +153,8 @@
     
   }
   .circulo7{
-    width: 20px;
-    height: 20px;
+    width: 60px;
+    height: 60px;
     background-image: url('./img/logos/js.png');
     border-radius: 50%;
     position: absolute;
@@ -167,8 +167,8 @@
     transition: opacity 0.5s ease;
   }
   .circulo8{
-    width: 20px;
-    height: 20px;
+    width: 80px;
+    height: 80px;
    background-image: url('./img/logos/html-5\ \(1\).png');
     border-radius: 50%;
     position: absolute;
@@ -181,8 +181,8 @@
     transition: opacity 0.5s ease;
   }
   .circulo9{
-    width: 20px;
-    height: 20px;
+    width: 90px;
+    height: 90px;
    background-image: url('./img/logos/css-3.png');
     border-radius: 50%;
     position: absolute;
@@ -195,8 +195,8 @@
     transition: opacity 0.5s ease;
   }
   .circulo10{
-    width: 20px;
-    height: 20px;
+    width: 70px;
+    height: 70px;
    background-image: url('./img/logos/node-logo.png');
     border-radius: 50%;
     position: absolute;
