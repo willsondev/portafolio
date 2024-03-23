@@ -31,4 +31,35 @@ function alternarVisibilidad() {
 // setInterval(alternarVisibilidad, 1500); // 3000 milisegundos = 3 segundos
 setInterval(alternarVisibilidad, 3000);
 
+// efecto escritura
+var typed = new Typed('#element', {
+  strings: ['<i>Ingeniero</i> informatico.', '&amp; Desarrollador Web.'],
+  typeSpeed: 50,
+  startDelay:300,
+  backSpeed:75,
+  shuffle: true,
+  backDelay:1500,
+  loop:true,
+  loopCount: false,
+  showCursor: true,
+  cursorChar:'|',
+  contentType:'html',
 });
+
+window.addEventListener('scroll', function() {
+  var botonVolverArriba = document.querySelector('.boton-volver-arriba');
+  var scrollPos = window.scrollY || window.scrollTop || document.documentElement.scrollTop;
+  var windowInnerHeight = window.innerHeight;
+
+  if (scrollPos > windowInnerHeight / 2) {
+      botonVolverArriba.style.display = 'block';
+  } else {
+      botonVolverArriba.style.display = 'none';
+  }
+});
+
+
+
+
+});
+
