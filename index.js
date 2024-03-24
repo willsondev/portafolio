@@ -65,6 +65,10 @@ const mobileMenu = document.getElementById("mobile-menu");
 mobileMenuToggle.addEventListener("click", function() {
     mobileMenu.classList.toggle("hidden");
 });
+
+function imagenes(){
+  
+}
 }
 
 

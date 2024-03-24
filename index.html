@@ -1,232 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>willson-dev</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="estilos.css">
-</head>
-<body class="">
-   
-  <nav class="bg-gray-800 fixed top-0 left-0 w-full shadow z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body class="">
+    <nav class="bg-gray-800 fixed top-0 left-0 w-full shadow z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
-            <div class="flex-shrink-0">
-                <a href="#" class="text-2xl font-bold text-white">Mi Portafolio WV</a>
+          <div class="flex-shrink-0">
+            <a href="#" class="text-2xl font-bold text-white"
+              >Mi Portafolio WV</a
+            >
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4 text-white">
+              <a
+                href="#inicio"
+                class="text hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Inicio</a
+              >
+              <a
+                href="#proyectos"
+                class="text hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Proyectos</a
+              >
+              <a
+                href="#contacto"
+                class="text hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >Contacto</a
+              >
             </div>
-            <div class="hidden md:block">
-                <div class="ml-10 flex items-baseline space-x-4 text-white">
-                    <a href="#inicio" class="text hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
-                    <a href="#proyectos" class="text hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Proyectos</a>
-                    <a href="#contacto" class="text hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
-                </div>
-            </div>
-            <!-- Mobile menu button -->
-            <div class="md:hidden">
-                <button id="mobile-menu-toggle" class="focus:outline-none">
-                    <svg class="h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
-                    </svg>
-                </button>
-            </div>
+          </div>
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button id="mobile-menu-toggle" class="focus:outline-none">
+              <svg
+                class="h-8 w-8 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-    </div>
-    <!-- Mobile menu -->
-    <div class="md:hidden" id="mobile-menu">
+      </div>
+      <!-- Mobile menu -->
+      <div class="md:hidden" id="mobile-menu">
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#inicio" class=" text block hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Inicio</a>
-            <a href="#proyectos" class="text block hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Proyectos</a>
-            <a href="#contacto" class="text block hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Contacto</a>
+          <a
+            href="#inicio"
+            class="text block hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+            >Inicio</a
+          >
+          <a
+            href="#proyectos"
+            class="text block hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+            >Proyectos</a
+          >
+          <a
+            href="#contacto"
+            class="text block hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+            >Contacto</a
+          >
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-
-    <div id="inicio" class="container mx-auto flex  ">
+    <div id="inicio" class="container mx-auto flex">
       <div class="w-3/5">
-        <h1 class="mt-40 font-bold text-5xl text-center text-white">Willson <br> Huenchulao Valdes</h1>
-        <h1 class="mt-10 font-bold text-4xl text-center text-white"><span id="element"></span></h1>
-    
+        <h1 class="mt-40 font-bold text-5xl text-center text-white">
+          Willson <br />
+          Huenchulao Valdes
+        </h1>
+        <h1 class="mt-10 font-bold text-4xl text-center text-white">
+          <span id="element"></span>
+        </h1>
+
         <div class="flex justify-center">
-          <a download="CV" href="./assest/CV_willson_huenchulao_2024.docx"><button type="button" class="mt-10 py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Descargar CV</button></a>
-            
+          <a download="CV" href="./assest/CV_willson_huenchulao_2024.docx"
+            ><button
+              type="button"
+              class="mt-10 py-2.5 px-5 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            >
+              Descargar CV
+            </button></a
+          >
         </div>
+      </div>
+
+      <div class="w-2/5 ">
+        <!-- <img src="./img/foto.png" class="opacity-50 h-auto" alt=""> -->
+        <div class="cuadrado md:flex ">
+          <div class="circulo  md:block hidden" id="imagen"></div>
+          <div class="circulo1 md:block hidden" id="imagen1"></div>
+          <div class="circulo2 md:block hidden" id="imagen2"></div>
+          <div class="circulo3 md:block hidden" id="imagen3"></div>
+          <div class="circulo4 md:block hidden" id="imagen4"></div>
+          <div class="circulo5 md:block hidden" id="imagen5"></div>
+          <div class="circulo6 md:block hidden" id="imagen6"></div>
+          <div class="circulo7 md:block hidden" id="imagen7"></div>
+          <div class="circulo8 md:block hidden" id="imagen8"></div>
+          <div class="circulo9 md:block hidden" id="imagen9"></div>
+          <div class="circulo10 md:block hidden" id="imagen10"></div>
+        </div>
+      </div>
     </div>
-    
-      <div class="w-2/5">
-          <!-- <img src="./img/foto.png" class="opacity-50 h-auto" alt=""> -->
-          <div class="cuadrado ">
-            <div class="circulo" id="imagen"> </div>
-            <div class="circulo1" id="imagen1"> </div>
-            <div class="circulo2" id="imagen2"> </div>
-            <div class="circulo3" id="imagen3"> </div>
-            <div class="circulo4" id="imagen4"> </div>
-            <div class="circulo5" id="imagen5"> </div>
-            <div class="circulo6" id="imagen6"> </div>
-            <div class="circulo7" id="imagen7"> </div>
-            <div class="circulo8" id="imagen8"> </div>
-            <div class="circulo9" id="imagen9"> </div>
-            <div class="circulo10" id="imagen10"> </div>
-          </div>
-      </div>
-  </div>
-  
 
-   
+    <div id="proyectos" class="fondo mx-auto">
+      <h1 class="titulo absolute text-gray-500 font-bold md:block hidden">
+        Portafolio
+      </h1>
+      <h1 class="flex justify-center text font-bold text-2xl">
+        Mis Proyectos Destacados
+      </h1>
 
-    <div id="proyectos" class=" fondo mx-auto ">
-        <h1 class=" titulo absolute  text-gray-500   font-bold md:block hidden ">Portafolio</h1>
-        <h1 class="flex justify-center text font-bold text-2xl  ">Mis Proyectos Destacados</h1>
-       
-        <!-- ... -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="relative ">
-                    <img src="./img/citas.png " class="h-86" alt="Imagen" />
-                    <div class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center"> 
-                    </div>
-                </div>
-                <h2 class="text-black text-2xl font-bold text-center "> Citas Veterinaria</h2> 
-                <h2 class="text-black text-2xl font-bold text-center "> JavaScript,React, vite,Tailwindcss</h2> 
-                <h2><link rel="stylesheet" href="https://github.com/willsonhuenchulao/citas_Veterinaria_React">GitHUb</h2>
-               
-              </div>
-              <div class="swiper-slide">
-                <div class="relative ">
-                    <img src="./img/pagina_montaña.png" class="h-86" alt="Imagen" />
-                    <div class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center"> 
-                    </div>
-                </div>
-                <h2 class="text-black text-2xl font-bold text-center "> Pagina Montaña</h2> 
-                <h2 class="text-black text-2xl font-bold text-center "> tailwindcss, css, html,js</h2> 
-                <h2><link rel="stylesheet" href="https://github.com/willsonhuenchulao/Pagina_web_montana">GitHUb</h2>
-               
-              </div>
-              <div class="swiper-slide">
-                <div class="relative ">
-                    <img src="./img/restorant.png" class="h-86" alt="Imagen" />
-                    <div class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center"> 
-                    </div>
-                </div>
-                <h2 class="text-black text-2xl font-bold text-center "> Pagina Restorant</h2> 
-                <h2 class="text-black text-2xl font-bold text-center "> tailwindcss, css, html,js</h2> 
-                <h2><link rel="stylesheet" href="https://github.com/willsonhuenchulao/Restorant_web">GitHUb</h2>
-               
-              </div>
-              <div class="swiper-slide">
-                <div class="relative ">
-                    <img src="./img/tareas.png" class="h-86" alt="Imagen" />
-                    <div class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center"> 
-                    </div>
-                </div>
-                <h2 class="text-black text-2xl font-bold text-center "> Tareas sencillas</h2> 
-                <h2 class="text-black text-2xl font-bold text-center ">python, flask, tailwindcss</h2> 
-                <h2><link rel="stylesheet" href="https://github.com/willsonhuenchulao/Tareas-Sencillas">GitHUb</h2>
-               
-              </div>
-              <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-              </div>
+      <!-- ... -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="relative">
+              <img src="./img/citas.png " class="h-86" alt="Imagen" />
+              <div
+                class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center"
+              ></div>
             </div>
-            <div class="swiper-pagination"></div>
+            <h2 class="text-black text-2xl font-bold text-center">
+              Citas Veterinaria
+            </h2>
+            <h2 class="text-black text-2xl font-bold text-center">
+              JavaScript,React, vite,Tailwindcss
+            </h2>
+            <h2>
+              <link
+                rel="stylesheet"
+                href="https://github.com/willsonhuenchulao/citas_Veterinaria_React"
+              />GitHUb
+            </h2>
           </div>
-      </div>
-
-      <section id="contacto" class="bg-[#1c1c1c] py-6 dark:bg-gray-800 dark:text-gray-50 ">
-        
-        <div class="mt-15 grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x ">
-            <h1 class="mr-32 titulo2 absolute bottom-22 z-1 text-gray-500 mb-20 font-bold md:block hidden  ">Contacto</h1>
-            <div class="py-6 md:py-0 md:px-6 z-50 ">
-                
-                <h1 class="text-4xl font-bold text-white">Ponerse en contacto</h1>
-                
-                <div class="space-y-4 mt-10">
-                    
-                    
-                    <p class="flex items-center mt-10">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6">
-                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-                        </svg>
-                        <span class="text-white text-3xl">+56986412076</span>
-                    </p>
-                    <p class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6">
-                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                        </svg>
-                        <span class="text-white text-3xl">willsondev12@gmail.com</span>
-                    </p>
-                </div>
+          <div class="swiper-slide">
+            <div class="relative">
+              <img src="./img/pagina_montaña.png" class="h-86" alt="Imagen" />
+              <div
+                class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center"
+              ></div>
             </div>
-
-         
-            <form novalidate="" class="z-50 flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
-              <a href="https://api.whatsapp.com/send?phone=+56986412076&text=TUMENSAJE" target="_blank" class="border text-white self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 dark:bg-emerald-400 dark:text-gray-900 focus:ring-emerald-400 hover:ring-emerald-400">Enviar mensaje por WhatsApp</a>
-               
-
-            </form>
-        
+            <h2 class="text-black text-2xl font-bold text-center">
+              Pagina Montaña
+            </h2>
+            <h2 class="text-black text-2xl font-bold text-center">
+              tailwindcss, css, html,js
+            </h2>
+            <h2>
+              <link
+                rel="stylesheet"
+                href="https://github.com/willsonhuenchulao/Pagina_web_montana"
+              />GitHUb
+            </h2>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative">
+              <img src="./img/restorant.png" class="h-86" alt="Imagen" />
+              <div
+                class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center"
+              ></div>
+            </div>
+            <h2 class="text-black text-2xl font-bold text-center">
+              Pagina Restorant
+            </h2>
+            <h2 class="text-black text-2xl font-bold text-center">
+              tailwindcss, css, html,js
+            </h2>
+            <h2>
+              <link
+                rel="stylesheet"
+                href="https://github.com/willsonhuenchulao/Restorant_web"
+              />GitHUb
+            </h2>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative">
+              <img src="./img/tareas.png" class="h-86" alt="Imagen" />
+              <div
+                class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center"
+              ></div>
+            </div>
+            <h2 class="text-black text-2xl font-bold text-center">
+              Tareas sencillas
+            </h2>
+            <h2 class="text-black text-2xl font-bold text-center">
+              python, flask, tailwindcss
+            </h2>
+            <h2>
+              <link
+                rel="stylesheet"
+                href="https://github.com/willsonhuenchulao/Tareas-Sencillas"
+              />GitHUb
+            </h2>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+          </div>
         </div>
-        
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <section
+      id="contacto"
+      class="bg-[#1c1c1c] py-6 dark:bg-gray-800 dark:text-gray-50"
+    >
+      <div
+        class="mt-15 grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x"
+      >
+        <h1
+          class="mr-32 titulo2 absolute bottom-22 z-1 text-gray-500 mb-20 font-bold md:block hidden"
+        >
+          Contacto
+        </h1>
+        <div class="py-6 md:py-0 md:px-6 z-50">
+          <h1 class="text-4xl font-bold text-white">Ponerse en contacto</h1>
+
+          <div class="space-y-4 mt-10">
+            <p class="flex items-center mt-10">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5 mr-2 sm:mr-6"
+              >
+                <path
+                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                ></path>
+              </svg>
+              <span class="text-white text-3xl">+56986412076</span>
+            </p>
+            <p class="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="w-5 h-5 mr-2 sm:mr-6"
+              >
+                <path
+                  d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                ></path>
+                <path
+                  d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                ></path>
+              </svg>
+              <span class="text-white text-3xl">willsondev12@gmail.com</span>
+            </p>
+          </div>
+        </div>
+
+        <form
+          novalidate=""
+          class="z-50 flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid"
+        >
+          <a
+            href="https://api.whatsapp.com/send?phone=+56986412076&text=TUMENSAJE"
+            target="_blank"
+            class="border text-white self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 dark:bg-emerald-400 dark:text-gray-900 focus:ring-emerald-400 hover:ring-emerald-400"
+            >Enviar mensaje por WhatsApp</a
+          >
+        </form>
+      </div>
     </section>
 
-    <a id="inicio" href="#" class="text-white boton-volver-arriba" style="display: none;">
-      <img src="./assest/iconos/flecha-hacia-arriba.png" alt="" style="width: 24px; height: 24px;">
-  </a>
-  
-
-   
-
-     
+    <a
+      id="inicio"
+      href="#"
+      class="text-white boton-volver-arriba mt-10"
+      style="display: none"
+    >
+      <img
+        src="./assest/iconos/flecha-hacia-arriba.png"
+        alt=""
+        style="width: 24px; height: 24px"
+      />
+    </a>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-      <script src="index.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-     
-
-
-
-
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          effect: "coverflow",
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: "auto",
-          coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,  // Habilita la paginación manual
-          },
-        });
-      </script>
-
-<!-- <script>
- 
-</script> -->
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assest/swiper.js"></script>
+  </body>
 </html>
