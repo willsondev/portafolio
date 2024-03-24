@@ -11,22 +11,39 @@
 </head>
 <body class="">
    
-    <nav class="bg-gray-800 fixed top-0 left-0 w-full  shadow z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex-shrink-0">
-                    <a href="#" class="text text-2xl font-bold">Mi Portafolio WV</a>
-                </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4 text">
-                        <a href="#inicio" class="text hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
-                        <a href="#proyectos" class="text hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Proyectos</a>
-                        <a href="#contacto" class="text hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
-                    </div>
+  <nav class="bg-gray-800 fixed top-0 left-0 w-full shadow z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex-shrink-0">
+                <a href="#" class="text-2xl font-bold text-white">Mi Portafolio WV</a>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4 text-white">
+                    <a href="#inicio" class="text hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
+                    <a href="#proyectos" class="text hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Proyectos</a>
+                    <a href="#contacto" class="text hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
                 </div>
             </div>
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-toggle" class="focus:outline-none">
+                    <svg class="h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                    </svg>
+                </button>
+            </div>
         </div>
-    </nav>
+    </div>
+    <!-- Mobile menu -->
+    <div class="md:hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="#inicio" class=" text block hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Inicio</a>
+            <a href="#proyectos" class="text block hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Proyectos</a>
+            <a href="#contacto" class="text block hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium">Contacto</a>
+        </div>
+    </div>
+</nav>
+
 
     <div id="inicio" class="container mx-auto flex  ">
       <div class="w-3/5">
