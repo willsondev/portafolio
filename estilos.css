@@ -50,9 +50,9 @@ html{
  
   .cuadrado{
     width: 90%;
-    height: 550px;
+    height: 600px;
     position: relative;
-    left: 20%;
+    
     background-image: url('./img/foto.png');
     align-items: center;
     background-size: cover;
